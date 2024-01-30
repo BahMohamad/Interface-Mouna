@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link  rel="stylesheet" href="./stylesss.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+
+  <h3 class="title" style="text-align: center;margin-top: 5%;">Resultat</h3>
+ <div class="container">
+  <div class="row">
+    <div class="col-4">
+  <div class="list-content">
+      <div class="list"> <br>
+        <h2>Info du client</h2><br>
+        <ul>
+          <li><span><label><strong>Nom : </strong></label> <?= $souscription->data[0]->partner_id[0]->name ?> <br><br></span></li>
+          <li><span><label><strong>Adresse : </strong></label>  <?= $infoclient->data[0]->contact_address_complete ?> </span></li>
+          <li><span> <label><strong>Email : </strong></label> <?= $infoclient->data[0]->email ?> <br><br></span></li>
+          <li><span><label><strong>Téléphone : </strong></label> <?= $infoclient->data[0]->phone ?> <br><br></span></li>
+          <li><span><label><strong>Numero d'abonnement : </strong></label> <?= $souscription->data[0]->code ?> </span></li>
+        
+        </ul>
+      </div>
+    </div>
+    </div>
+      
+
+    <div class="col-4">
+      <div class="list">
+        <h2> Info Facturation</h2>
+        <ul>
+          <li><span><label><strong>Etat du Compte : </strong></label> <?= $souscription->data[0]->partner_id[0]->name ?> <br></span></li>
+          <li><span><label><strong>Profil Client: </strong></label>  <?= $infoclient->data[0]->contact_address_complete ?> </span></li>
+          <li><span> <label><strong>Nombre de Facture : </strong></label> <?= $infoclient->data[0]->email ?> <br></span></li>
+          <li><span><label><strong>Nombre de Facture impayée: </strong></label> <?= $infoclient->data[0]->phone ?> <br></span></li>
+          <li><span><label><strong>Periode de Facture en cours : </strong></label> <?= $souscription->data[0]->code ?> </span></li>
+          <li><span><label><strong>Debut : </strong></label> <?= $souscription->data[0]->code ?> </span></li>
+          <li><span><label><strong>Fin : </strong></label> <?= $souscription->data[0]->code ?> </span></li>
+         
+        </ul>
+      </div>
+    </div>
+
+      <div class="col-4">
+      <div class="list">
+        <h2>Info de l'equipement</h2>
+        <ul>
+          <li><span><label><strong>Type d'equipement : </strong></label> <?= $souscription->data[0]->partner_id[0]->name ?> <br><br></span></li>
+          <li><span><label><strong>OLT connecté: </strong></label>  <?= $infoclient->data[0]->contact_address_complete ?> </span></li>
+          <li><span> <label><strong>Probleme détecté  : </strong></label> <?= $infoclient->data[0]->email ?> <br><br></span></li>
+          <li><span><label><strong>Description : </strong></label> <?= $infoclient->data[0]->phone ?> <br><br></span></li>
+          <li><span><label><strong>Numero d'abonnement : </strong></label> <?= $souscription->data[0]->code ?> </span></li>
+          
+        </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+  <div class="container">
+
+<div class="row">
+        <div class="col-6">
+          <button class=" btn btn-primary ">Nouveau Sub</button>
+        </div>
+
+        <div class="col-6" >
+          <div class="row">
+            <div class="col-5">
+              <button class=" btn btn-primary " style="float:right;" >Imprimer</button>
+            </div>
+            <div class="col-5">
+              <button class=" btn btn-primary ">Ticket</button>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+</body>
+</html>
